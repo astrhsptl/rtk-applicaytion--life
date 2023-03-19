@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+
+  nginx:
+    build: ./nginx
+    links:
+      - frontend
+    depends_on:
+      - frontend
+    volumes:
+      - static_volume:/app/backend/staticfiles
+      - media_volume:/app/backend/media
+    ports:
+      - "80:80"
+      - "443:443"
+
+  frontend:
+    container_name: frontend
+    build: .
+
+volumes:
+  media_volume:
+  static_volume:

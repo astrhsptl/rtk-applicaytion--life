@@ -1,0 +1,32 @@
+.template__account {
+    display: grid;
+
+    width: 85%;
+    max-width: 85%;
+
+    grid-template-columns: 40% 60%;
+
+    justify-self: center;
+
+
+}
+
+.wrap {
+    display: grid;
+
+    max-width: 90%;
+
+    justify-self: end;
+
+    grid-template-rows: auto 40px;;
+}
+
+.client_wrap {
+    display: grid;
+
+    max-width: 90%;
+
+    justify-self: end;
+
+    grid-template-rows: 20px 45% 20px 45%;
+}
