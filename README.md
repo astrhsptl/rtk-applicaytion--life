@@ -1,15 +1,7 @@
-# sber-to-do-list
-Поднимается
-```
-docker-compose up -d --build
-```
+для тестирования фильтра по ИНН:
 
-Логи:
-```
-docker-compose logs
-```
+http://v1744264.hosted-by-vdsina.ru/applications
 
-Выключение:
-```
-docker-compose down -v --rmi local
-```
+для теестирования поиска по ИНН:
+
+http://v1744264.hosted-by-vdsina.ru/userlist
